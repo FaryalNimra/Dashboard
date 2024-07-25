@@ -1,0 +1,54 @@
+.knbox-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Full viewport height for the container */
+  flex-direction: row; /* Default layout for larger screens */
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+.sidebar-container {
+  flex: 0 0 250px; /* Fixed width for sidebar (adjust as needed) */
+  background-color: #FCFCFC; /* Match background color if needed */
+  padding-right: 25px; /* Add padding to move it to the right */
+  height: 100vh; /* Full viewport height for sidebar */
+  box-sizing: border-box; /* Include padding in width/height calculation */
+  overflow: hidden; /* Ensure sidebar content does not scroll */
+  
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding-right: 0; /* Remove right padding on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+.content-container {
+  flex: 1; /* Grow to fill remaining space */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  background-color: #FCFCFC; 
+  width: 100%;
+  height: 100vh; /* Full viewport height for content */
+  padding: 20px; /* Optional: adjust as needed */
+  box-sizing: border-box; /* Include padding in width calculation */
+  overflow: hidden; /* Ensure content does not scroll */
+
+  /* To ensure that there's no space below content */
+  position: relative; /* Make sure the content can be controlled */
+}
+
+.content-container > * {
+  /* Optional space between elements */
+  margin-bottom: 0; /* Remove space between elements */
+
+  @media (max-width: 768px) {
+    margin-bottom: 0; /* Ensure no margin on smaller screens */
+  }
+}
+
+.content-container > :last-child {
+  margin-bottom: 0; /* Ensure no margin at the bottom of the last element */
+}

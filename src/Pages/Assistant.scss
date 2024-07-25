@@ -1,0 +1,48 @@
+.Assistant-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row; /* Default layout for larger screens */
+  
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+.sidebar-container {
+  flex: 0 0 auto; /* Fixed width for sidebar */
+  background-color: #FCFCFC; /* Optional: to match Element5's styling */
+  padding-right: 25px; /* Add padding to move it to the right */
+  
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    padding-right: 0; /* Remove right padding on smaller screens */
+    padding-bottom: 20px; /* Add some padding at the bottom for spacing */
+  }
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  background-color: #FCFCFC; 
+  width: 100%;
+  padding: 20px; /* Optional: adjust as needed */
+  
+  @media (max-width: 768px) {
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+}
+
+.content-container > * {
+  margin-bottom: 20px; /* Space between Element4 and Element3 */
+  
+  @media (max-width: 768px) {
+    margin-bottom: 15px; /* Reduced margin on smaller screens */
+  }
+}
+
+.content-container > :last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last child */
+}

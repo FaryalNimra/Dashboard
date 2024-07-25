@@ -1,0 +1,82 @@
+.element13-container {
+    max-width: 450px; // Adjust as needed for sidebar width
+    background-color: #F8F8FA; // Light background color for contrast
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 200px;
+  }
+  
+  .paragraph-left {
+    margin-bottom: 20px;
+    color: #7E8299;
+  }
+  
+  .responsive-image {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  
+  .paragraph-middle {
+    margin-bottom: 20px;
+    color: #7E8299;
+  }
+  
+  .two-column-div {
+    margin-bottom: 20px;
+  
+    .column-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  
+    .column-heading {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #5E6278;
+    }
+  
+    .column-paragraph {
+        margin-top: 10px;
+      font-size: 0.875rem;
+      color: #7E8299;
+    }
+  
+    .column-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .bottom-heading {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #5E6278;
+  }
+  
+  .bottom-paragraph {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+    color: #7E8299;
+  }
+  
+  .bottom-button {
+    background-color: #0C0698;
+    color: white;
+    border: none;
+    width: 40%;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: #080477;
+    }
+  }
+  
